@@ -1,2 +1,467 @@
 # brasil-melhor
 .....
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Brasil Melhor - Ideias para Transformar a Sociedade</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Inter',sans-serif;
+}
+
+body{
+background:#f1f5f9;
+color:#1e293b;
+}
+
+/* NAVBAR */
+
+header{
+background:white;
+box-shadow:0 2px 10px rgba(0,0,0,0.05);
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.nav{
+max-width:1200px;
+margin:auto;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px;
+}
+
+.logo{
+font-size:22px;
+font-weight:700;
+color:#2563eb;
+}
+
+nav a{
+margin-left:20px;
+text-decoration:none;
+color:#334155;
+font-weight:500;
+cursor:pointer;
+}
+
+nav a:hover{
+color:#2563eb;
+}
+
+/* HERO */
+
+.hero{
+background:linear-gradient(120deg,#2563eb,#1e40af);
+color:white;
+text-align:center;
+padding:120px 20px;
+}
+
+.hero h1{
+font-size:48px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:20px;
+max-width:700px;
+margin:auto;
+}
+
+.hero button{
+margin-top:30px;
+padding:15px 30px;
+border:none;
+background:white;
+color:#2563eb;
+font-weight:600;
+border-radius:8px;
+cursor:pointer;
+}
+
+.hero button:hover{
+background:#e2e8f0;
+}
+
+/* SECTION */
+
+section{
+padding:80px 20px;
+max-width:1200px;
+margin:auto;
+}
+
+section h2{
+text-align:center;
+margin-bottom:50px;
+font-size:32px;
+}
+
+/* GRID */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:12px;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+/* STATS */
+
+.stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:25px;
+}
+
+.stat{
+background:white;
+padding:40px;
+border-radius:10px;
+text-align:center;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+
+.stat h3{
+font-size:40px;
+color:#2563eb;
+}
+
+/* IDEIAS */
+
+textarea{
+width:100%;
+height:120px;
+padding:15px;
+border-radius:8px;
+border:1px solid #cbd5e1;
+}
+
+button{
+background:#2563eb;
+color:white;
+border:none;
+padding:12px 20px;
+border-radius:8px;
+cursor:pointer;
+margin-top:10px;
+}
+
+button:hover{
+background:#1e40af;
+}
+
+.idea{
+background:white;
+padding:20px;
+margin-top:15px;
+border-radius:10px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+box-shadow:0 5px 15px rgba(0,0,0,0.08);
+gap:10px;
+}
+
+.idea-buttons{
+display:flex;
+gap:10px;
+}
+
+.delete{
+background:#ef4444;
+}
+
+.delete:hover{
+background:#dc2626;
+}
+
+/* FOOTER */
+
+footer{
+background:#0f172a;
+color:white;
+text-align:center;
+padding:40px;
+margin-top:60px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="nav">
+
+<div class="logo">Brasil Melhor</div>
+
+<nav>
+
+<a onclick="scrollToSection('temas')">Temas</a>
+<a onclick="scrollToSection('dados')">Dados</a>
+<a onclick="scrollToSection('propostas')">Propostas</a>
+<a onclick="scrollToSection('participacao')">Participação</a>
+<a onclick="scrollToSection('sobre')">Sobre</a>
+
+</nav>
+
+</div>
+
+</header>
+
+<div class="hero">
+
+<h1>Ideias que Transformam o País</h1>
+
+<p>
+Uma plataforma aberta para reunir propostas que podem melhorar
+segurança, saúde, educação, economia e tecnologia.
+</p>
+
+<button onclick="scrollToSection('participacao')">
+Enviar uma Ideia
+</button>
+
+</div>
+
+<section id="temas">
+
+<h2>Principais Áreas de Transformação</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>🔒 Segurança</h3>
+<p>Policiamento comunitário, prevenção ao crime e tecnologia urbana.</p>
+</div>
+
+<div class="card">
+<h3>🏥 Saúde</h3>
+<p>Investimento em hospitais, telemedicina e prevenção.</p>
+</div>
+
+<div class="card">
+<h3>📚 Educação</h3>
+<p>Ensino tecnológico, formação profissional e valorização docente.</p>
+</div>
+
+<div class="card">
+<h3>💼 Economia</h3>
+<p>Empreendedorismo, inovação e geração de empregos.</p>
+</div>
+
+<div class="card">
+<h3>💡 Tecnologia</h3>
+<p>Cidades inteligentes e serviços públicos digitais.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="dados">
+
+<h2>Impacto da Plataforma</h2>
+
+<div class="stats">
+
+<div class="stat">
+<h3 id="ideasCount">0</h3>
+<p>Ideias enviadas</p>
+</div>
+
+<div class="stat">
+<h3 id="votesCount">0</h3>
+<p>Votos registrados</p>
+</div>
+
+<div class="stat">
+<h3>5</h3>
+<p>Áreas sociais</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="propostas">
+
+<h2>Exemplos de Propostas</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Monitoramento Inteligente</h3>
+<p>Uso de câmeras e IA para prevenção de crimes.</p>
+</div>
+
+<div class="card">
+<h3>Hospitais Digitais</h3>
+<p>Consultas online e integração de dados médicos.</p>
+</div>
+
+<div class="card">
+<h3>Escolas Tecnológicas</h3>
+<p>Programação e robótica no ensino básico.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="participacao">
+
+<h2>Envie sua Ideia</h2>
+
+<textarea id="ideaInput" placeholder="Escreva sua proposta..."></textarea>
+
+<br>
+
+<button onclick="addIdea()">Publicar Ideia</button>
+
+<div id="ideasList"></div>
+
+</section>
+
+<section id="sobre">
+
+<h2>Sobre o Projeto</h2>
+
+<p style="text-align:center;max-width:700px;margin:auto;">
+Este projeto busca incentivar a participação da sociedade na criação
+de soluções para problemas sociais. Acreditamos que ideias coletivas
+podem ajudar a transformar o futuro do país.
+</p>
+
+</section>
+
+<footer>
+
+<p>© 2026 Brasil Melhor • Plataforma de Ideias Sociais</p>
+
+</footer>
+
+<script>
+
+/* SCROLL SUAVE */
+
+function scrollToSection(id){
+
+document.getElementById(id).scrollIntoView({
+behavior:"smooth"
+})
+
+}
+
+/* CONTADORES */
+
+let ideas=0
+let votes=0
+
+function updateStats(){
+
+document.getElementById("ideasCount").innerText=ideas
+document.getElementById("votesCount").innerText=votes
+
+}
+
+/* ADICIONAR IDEIA */
+
+function addIdea(){
+
+let input=document.getElementById("ideaInput")
+
+let text=input.value
+
+if(text==="") return
+
+ideas++
+
+let idea=document.createElement("div")
+
+idea.className="idea"
+
+idea.innerHTML=`
+
+<span>${text}</span>
+
+<div class="idea-buttons">
+
+<button onclick="vote(this)">👍 <span>0</span></button>
+
+<button class="delete" onclick="deleteIdea(this)">Excluir</button>
+
+</div>
+
+`
+
+document.getElementById("ideasList").appendChild(idea)
+
+input.value=""
+
+updateStats()
+
+}
+
+/* VOTAR */
+
+function vote(btn){
+
+let span=btn.querySelector("span")
+
+let count=parseInt(span.innerText)
+
+count++
+
+votes++
+
+span.innerText=count
+
+updateStats()
+
+}
+
+/* EXCLUIR IDEIA */
+
+function deleteIdea(btn){
+
+btn.parentElement.parentElement.remove()
+
+ideas--
+
+updateStats()
+
+}
+
+</script>
+
+</body>
+</html>
